@@ -22,7 +22,7 @@ export default {
     height 660px
     .slider
       display flex
-      width 100%
+      width 85%
       background url("/static/images/gradient.png") center center no-repeat
       background-size cover
 </style>

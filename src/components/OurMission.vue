@@ -39,20 +39,16 @@
 
     .text-block
       display flex
-      width 55%
+      max-width 575px
       font-size 1.2rem
       p
-        font-weight 400
+        font-weight 500
         line-height 1.5rem
 
   @media screen and (max-width: 1200px)
     #our-mission
       padding 0 50px
-      .text-block
-        width 70%
   @media screen and (max-width: 980px)
     #our-mission
       padding 0 10px
-      .text-block
-        width 95%
 </style>

@@ -15,8 +15,8 @@
 export default {
   data () {
     return {
-      textBold: `Ми робимо юриспруденцію доступнішою для українців, створюючи юридичні онлайн-сервіси. `,
-      textNormal: `З Дом юриста кожен може отримати якісні юридичні послуги перед екраном свого комп’ютера.`
+      textBold: `Ми робимо юриспруденцію \nдоступнішою для українців, \nстворюючи юридичні онлайн- \nсервіси. `,
+      textNormal: `З Дом юриста кожен \nможе отримати якісні юридичні \nпослуги перед екраном свого \nкомп’ютера.`
     }
   }
 }
@@ -60,10 +60,12 @@ export default {
         background url("/static/images/about-company.png") 50% 50%/cover no-repeat
       .text-block
         display flex
+        justify-content center
         padding 75px 50px
         width 50%
         font-size 1.7rem
         p
+          white-space pre-wrap
           font-weight 400
           line-height 2rem
     .footer

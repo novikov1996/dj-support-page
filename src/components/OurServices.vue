@@ -79,6 +79,7 @@
       .big-services, .small-services
         display flex
         flex-direction column
+        justify-content space-between
         align-items center
         padding 0 20px
       .big-services
@@ -91,6 +92,7 @@
       .services-container
         flex-direction row
         .big-services, .small-services
+          justify-content flex-start
           padding 0 20px
           width 50%
         .big-services

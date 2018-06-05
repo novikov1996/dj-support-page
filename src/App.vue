@@ -1,13 +1,22 @@
-<template>
-  <div id="app">
-    <router-view/>
-  </div>
+<template lang="pug">
+  #app
+    nav-bar
+    router-view
+    //footer-component
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import FooterComponent from './components/FooterComponent'
+  import NavBar from './components/NavBar'
+
+  export default {
+    name: 'App',
+    components: {
+      NavBar,
+      FooterComponent
+    }
+
+  }
 </script>
 
 <style lang="stylus">
