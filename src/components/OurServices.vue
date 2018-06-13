@@ -95,7 +95,6 @@
       handlerShowDetails (service) {
         this.isModalVisible = true
         this.choosenService = service
-        console.log(service)
       },
       handlerDetailsModalClose () {
         this.isModalVisible = false
