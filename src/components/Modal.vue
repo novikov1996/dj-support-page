@@ -26,7 +26,23 @@
 
 <script>
   export default {
-    name: 'Modal'
+    name: 'Modal',
+    mounted () {
+      this.storedState.position = document.body.style.position
+      this.storedState.overflow = document.body.style.overflow
+      this.storedState.height = document.body.style.height
+      document.body.style.position = 'absolute'
+      document.body.style.overflow = 'hidden'
+      document.body.style.height = '100vh'
+    },
+    beforeDestroy () {
+      document.body.style.position = this.storedState.position
+      document.body.style.overflow = this.storedState.overflow
+      document.body.style.height = this.storedState.height
+    },
+    data () {
+      return {storedState: {}}
+    }
   }
 </script>
 
@@ -36,8 +52,9 @@
     z-index: 9998;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, .5);
     display: table;
     transition: opacity .3s ease;
@@ -47,6 +64,7 @@
     display: table-cell;
     vertical-align: middle;
     padding: 0 2rem;
+    height: 100vh;
   }
 
   .modal-container {
@@ -83,6 +101,11 @@
   .modal-leave-active .modal-container {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  body {
+    height: 100%;
+    position: fixed;
   }
 
 </style>
