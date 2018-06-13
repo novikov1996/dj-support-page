@@ -9,7 +9,7 @@
                 .youtube-video-container
                   iframe(width="100%" height="100%" src="https://www.youtube.com/embed/9PJTVQryxkI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
             .column
-              .is-16-by-9.is-full-height-touch
+              .is-16-by-9
                 .is-overlay
                   .list.choosen-service-section
                     .list.choosen-service-description
