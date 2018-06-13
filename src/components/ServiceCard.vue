@@ -11,7 +11,7 @@
           p Сервіс:
             a  {{title}}
       .link
-        a.more(:href="link") Дізнатися більше
+        a.more(@click="$emit('show-details', service)") Дізнатися більше
 </template>
 
 <script>

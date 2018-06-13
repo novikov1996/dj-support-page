@@ -1,2 +1,31 @@
 @import 'normalize.styl'
 
+.columns
+  display flex
+
+.columns .column
+  width 100%
+
+@media screen and (max-width: 1023px) {
+  .columns {
+    flex-direction: column
+  }
+}
+
+.is-16-by-9
+  position: relative;
+  padding-bottom: 56.2%;
+
+.is-overlay
+  position absolute
+  left: 0
+  right 0
+  bottom 0
+  top: 0
+
+.youtube-video
+  @extend .is-16-by-9
+
+.youtube-video-container
+  @extend .is-overlay
+
