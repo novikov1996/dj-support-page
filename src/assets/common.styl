@@ -10,11 +10,23 @@
   .columns {
     flex-direction: column
   }
+
+  .is-16-by-9-desktop {
+    position relative
+    padding-bottom 0 !important
+  }
+
+  .is-16-by-9-desktop .is-overlay {
+    position static
+  }
 }
 
 .is-16-by-9
   position: relative;
   padding-bottom: 56.2%;
+
+.is-16-by-9-desktop
+  @extend .is-16-by-9
 
 .is-overlay
   position absolute

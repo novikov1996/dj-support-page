@@ -68,6 +68,8 @@
   }
 
   .modal-container {
+    max-height: 90vh;
+    overflow-y: scroll;
     margin: 0px auto;
     background-color: #fff;
     border-radius: 2px;
@@ -82,7 +84,7 @@
   }
 
   .modal-body {
-    margin: 20px 0;
+
   }
 
   .modal-default-button {
