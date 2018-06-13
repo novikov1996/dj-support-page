@@ -159,6 +159,12 @@
           padding 0 10px
           width 100%
 
+    @media screen and (max-width: 1023px) {
+      .choosen-service-section {
+        overflow: hidden;
+      }
+    }
+
   .choosen-service-section
     padding 38px 17px 15px
     height 100%

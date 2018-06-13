@@ -83,8 +83,15 @@
     color: #42b983;
   }
 
-  .modal-body {
 
+  @media screen and (max-width: 1023px) {
+    .modal-body {
+      overflow-y: scroll;
+    }
+  }
+
+  .modal-body {
+    overflow: hidden;
   }
 
   .modal-default-button {
