@@ -57,11 +57,13 @@
 
   .list
     margin 51px
-    padding 0 51px
+    display flex
+    flex-direction column
+    align-items center
     width 100%
-    max-width 600px
+    max-width 700px
     .list-item
-      width 100%
+      width 85%
       margin-bottom 25px
     .list-item_description
       transform: scaleY(0)
@@ -76,11 +78,11 @@
   .list-item.active,
   .list-item.active .list-item-header,
   .list-item.active .list-item_description
-    width 105%
-    margin-left -2.5%
-    transition width 0.3s, margin-left 0.3s
+    width 100%
+    transition all 0.3s
 
   .list-item.active
+    margin-bottom 50px
     .list-item_description
       padding-top 29px
       padding-bottom 15px
@@ -127,17 +129,16 @@
   @media screen and (max-width: 1200px)
     #reason
       .slider
-        width 65%
         background url("/static/images/gradient.png") 10% 50% no-repeat
     .list
       margin 25px
-      padding 0 30px
 
   @media screen and (max-width: 980px)
     #reason
       .slider
+        justify-content center
         width 100%
         background url("/static/images/gradient.png") 10% 50% no-repeat
     .list
-      margin 25px 5px
+      margin 25px 10px
 </style>
