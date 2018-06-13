@@ -49,15 +49,17 @@
     height 660px
     .slider
       display flex
+      justify-content flex-end
       width 85%
       background url("/static/images/gradient.png") center center no-repeat
       background-size cover
       overflow-y scroll
 
   .list
-    margin 51px 25px 51px 25%
-    padding-right 51px
+    margin 51px
+    padding 0 51px
     width 100%
+    max-width 600px
     .list-item
       width 100%
       margin-bottom 25px
@@ -121,4 +123,21 @@
     transition: transform 0.3s ease-out;
     float right
     background-size 60% 60%
+
+  @media screen and (max-width: 1200px)
+    #reason
+      .slider
+        width 65%
+        background url("/static/images/gradient.png") 10% 50% no-repeat
+    .list
+      margin 25px
+      padding 0 30px
+
+  @media screen and (max-width: 980px)
+    #reason
+      .slider
+        width 100%
+        background url("/static/images/gradient.png") 10% 50% no-repeat
+    .list
+      margin 25px 5px
 </style>
