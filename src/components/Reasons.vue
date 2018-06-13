@@ -47,13 +47,14 @@
     display flex
     justify-content flex-end
     height 660px
+    overflow: hidden
     .slider
       display flex
       justify-content flex-end
       width 85%
       background url("/static/images/gradient.png") center center no-repeat
       background-size cover
-      overflow-y scroll
+      overflow-y auto
 
   .list
     margin 51px

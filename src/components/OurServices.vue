@@ -158,19 +158,18 @@
         .big-services, .small-services
           padding 0 10px
           width 100%
+  @media screen and (max-width: 1023px)
+    .choosen-service-section
+      overflow hidden
 
-    @media screen and (max-width: 1023px) {
-      .choosen-service-section {
-        overflow: hidden;
-      }
-    }
 
   .choosen-service-section
     padding 38px 17px 15px
     height 100%
+    overflow hidden
     .choosen-service-description
       height calc(100% - 3rem)
-      overflow scroll
+      overflow auto
       margin-bottom 1rem
     .buttons
       position relative
